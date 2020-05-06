@@ -1,0 +1,196 @@
+:root{
+  --primary-color:#d2d2d2;
+  --body-bg:#ffffff;
+  --footer-bg :#F2F3F5;
+  --font-color : #202125;
+  --symbol-color:  #F2F3F5;
+  --symbol-dark: #1A73E9;
+  --header-bg: #F2F3F5;
+  --dark-bg-hover: #DBDCE0;
+  --header-zeus:#F2F3F5;
+  --header-name :#F2F3F5 ;
+  --body-text: #202125;
+  /* --slider-color:black; */
+}
+[data-theme="dark"]{
+  --body-bg:#2C3033;
+  --footer-bg :#202125;
+  --symbol-color: #202125;
+  --font-color : #E9EAEE;
+  --header-bg: #202125;
+  --dark-bg-hover: #9BA0A6;
+  --primary-color:#121212;
+  --header-zeus:#1A73E9;
+  --body-text: red;
+
+  /* --slider-color:ffffff; */
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.wrapper{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+width: 100vw;
+height: 100vh;
+background:var(--primary-color);
+           /* #d2d2d2; */
+transition: 417ms;
+
+}
+.calculator{
+display: grid;
+grid-template-rows: 8% 25% auto;
+  width: 300px;
+  height: 500px;
+  background-color:white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+
+}
+.calculator-header{
+  background-color: var(--header-bg);                   /*  #F2F3F5*/
+  border-radius: 8px 8px 0px 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right:4px;
+}
+h2{
+  font-family: 'Lato', sans-serif;
+
+font-size: 16px;
+margin-right: 10px;
+color: var(--header-name);
+transition: 417ms;
+margin-bottom: 6px;
+text-decoration: none;                                     /*#F2F3F5*/
+}
+h2 .zeus{
+  font-family: 'Lato', sans-serif;
+
+font-size: 27px;
+margin-right: 20px;
+color: var(--header-zeus);
+transition: 417ms;
+}
+
+.calculator-body{
+  background-color: var(--body-bg) ;                /* #ffffff */
+  color: var(--body-text);
+  display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+ padding: 20px;
+ font-family: 'Lato', sans-serif;
+}
+.calculator-footer{
+   background-color: var(--footer-bg);                     /* #F2F3F5 */
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-template-rows: auto auto auto auto ;
+  grid-column-gap: 10px;
+  justify-content: space-around;
+  grid-row-gap: 10px;
+  padding: 10px 0px;
+  font-weight:bold;
+border-radius: 0 0 8px 8px;
+}
+.calculator-footer div{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: var(--font-color);                            /*#202125;*/
+  transition: 417ms ;
+}
+.calculator-footer div.symbol{
+  background-color: var(--symbol-color);
+   color: #1A73E9;
+   font-size: 22px;
+
+
+}
+.calculator-footer div.symbol-dark{
+  background-color: var(--symbol-dark) ;           /*#1A73E9*/
+}
+.calculator-footer div:hover{
+  cursor: pointer;
+}
+.calculator-footer div:hover{
+  background-color: var(--dark-bg-hover);               /*#DBDCE0*/
+}
+.calculator-footer div.symbol:hover{
+  background-color: var(--dark-bg-hover);                 /*#DBDCE0*/
+}
+ /* switch_box_header */
+
+ /*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch-wrapper em {
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  width: 50px;
+
+}
+
+.theme-switch input {
+  display: none;
+
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  margin-right: 10px;
+}
+
+.slider:before {
+  background-color:  ;    /*black*/
+  content: "";
+  bottom: -5px;
+  height: 26px;
+  /* left: 0px; */
+  right: 25px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+ input:checked + .slider {
+  background-color: #1A73E9;          /*#1A73E9*/
+}
+
+
+
+.slider.round {
+  border-radius: 34px;
+}
+.madeby{
+  text-align: center;
+  text-decoration: none;
+}
